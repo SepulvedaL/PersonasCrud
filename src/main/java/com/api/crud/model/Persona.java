@@ -1,5 +1,6 @@
 package com.api.crud.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,7 +15,7 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    //@Column(name = "nombre_completo") Definimos el nombre de la columna
+    @Column(name = "nombre_completo") //Definimos el nombre de la columna
     private String nombre;
     private String apellido;
     private int edad;
@@ -28,6 +29,9 @@ public class Persona {
     
     
     //Generamos nuestro método constructor
+    public Persona(){
+    }
+
     public Persona(String nombre, String apellido, int edad, Pais pais, Estado estado) {
         this.nombre = nombre;
         this.apellido = apellido;
