@@ -21,6 +21,9 @@ public class Estado {
     private String nombre;
 
     //Generamos nuestro método constructor
+    public Estado(){
+    }
+
     public Estado(Pais pais, String nombre) {
         this.pais = pais;
         this.nombre = nombre;
