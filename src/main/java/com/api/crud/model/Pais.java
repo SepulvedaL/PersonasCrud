@@ -15,6 +15,10 @@ public class Pais {
     private String nombre;
     
     //Generamos nuestro método constructor
+
+    public Pais() {
+    }
+
     public Pais(String nombre) {
         this.nombre = nombre;
     }
